@@ -1,0 +1,19 @@
+/* this is the main parent sasss file, import everything here */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'abstracts/variables';
+@import 'abstracts/utilities';
+@import 'abstracts/mixin';
+
+@import 'base/animations';
+@import 'base/fonts';
+@import 'base/base';
+@import 'base/reset';
+
+@import 'layout/nine-masthead.scss';
+// @import 'layout/integration-message';
+
+@import 'components/globals';

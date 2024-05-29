@@ -1,0 +1,187 @@
+
+#desktop {
+		// height: 1036px;
+		// min-height: 900px;
+	height: 100vh;
+	overflow: visible;
+	flex-wrap: nowrap;
+	width: 100%;
+	// max-width: 1920px !important;
+}
+
+
+// #tablet {
+// 	// height: 1036px;
+// 	overflow: visible;
+// 	flex-wrap: nowrap;
+// 	// min-height: 900px;
+// 	width: 100%;
+// 	height: 100vh;
+// }
+
+body {
+	// max-width: 1920px !important;
+	overflow-x: hidden;
+  }
+
+html {
+	scroll-behavior: smooth;
+}
+
+.container {
+	margin-left:20vw;
+}
+// @media screen and (max-width:1366px) {
+// 	.container-tablet {
+// 		margin-left:25vw;
+// 	}
+// }
+
+.move-left {
+  animation: move-left 1s forwards;
+}
+
+@keyframes move-left {
+  0% {
+    transform: translateX(-35%);
+
+  }
+  100% {
+    transform: translateX(0);
+
+  }
+}
+
+.move-right {
+	animation: move-right 0.5s backwards;
+  }
+  
+  @keyframes move-right {
+	0% {
+	  transform: translateX(35%);
+	}
+	100% {
+	  transform: translateX(0%);
+	}
+  }
+
+
+
+.fade-up {
+	animation: fade-up 0.25s ease-in;
+  }
+  
+  @keyframes fade-up {
+	0% {
+		transform: translateX(50%);
+	  opacity: 0;
+	}
+	100% {
+	 opacity:1;
+	 transform: translateX(0%);
+	}
+  }
+
+
+.fade-down {
+	animation: fade-down 0.25s ease-in;
+  }
+  
+  @keyframes fade-down {
+	0% {
+	  opacity: 1;
+	}
+	100% {
+	 opacity:0
+	}
+  }
+  
+.heading {
+	@apply text-clampHeading uppercase rift-bold  pb-0 leading-tight 
+}
+
+.heading-chunk {
+	writing-mode: vertical-lr;
+	transform: rotate(180deg);
+	font-family: Rift;
+	font-family: rift, Arial, Helvetica, sans-serif;
+	font-weight: 900;
+	
+}
+
+
+.vivid-heading {
+	@apply text-clampHeading4 uppercase rift-bold mb-4 pb-0 leading-tight
+}
+
+.menu-item {
+	@apply  text-center active:underline active:text-bright-cyan
+}
+
+.article-title {
+	@apply rift-bold mb-4 leading-tight text-bright-pink group-hover:text-bright-cyan transition-all ease-in-out duration-300
+}
+
+
+.article-title-mobile {
+	@apply rift-bold mb-4 leading-tight text-bright-pink group-hover:text-bright-cyan text-35 transition-all ease-in-out duration-300
+}
+
+.location-title {
+	@apply text-clampHeading3 rift-bold leading-tight pb-0 mb-0 md:mt-6
+}
+
+
+.expand-title {
+	@apply text-clampHeading2 rift-bold leading-tight text-bright-pink xxl:py-10 py-4
+}
+
+
+.read-more {
+	@apply text-clampHeading5 font-bold my-4 text-bright-cyan group-hover:text-bright-pink transition-all ease-in-out duration-300
+}
+
+
+.active {
+	@apply underline text-bright-cyan
+}
+
+
+
+
+.columnA {
+	@apply flex flex-col lg:justify-between lg:pb-0 pb-10 relative   h-screen  pt-[44px]  xxl:justify-center xxl:items-center xxl:gap-12 
+}
+
+.columnB {
+	@apply flex flex-col lg:justify-around justify-start lg:pt-0 pt-[44px] pb-4    h-screen xxl:justify-center xxl:items-center xxl:gap-12 
+}
+
+.columnC {
+	@apply flex flex-col  justify-end relative lg:pt-[44px] pt-8  h-screen xxl:justify-center xxl:items-center xxl:gap-12 
+}
+
+.columnD {
+	@apply flex flex-col justify-between relative pt-[60px]   h-screen xxl:justify-center xxl:items-center xxl:gap-12 
+}
+
+.columnE {
+	@apply flex flex-col justify-start relative    h-screen  py-10 xxl:justify-start xxl:items-center xxl:gap-12 
+}
+
+.columnF {
+	@apply flex flex-col justify-end relative    lg:pt-[44px] pb-10 pt-8 xxl:justify-end xxl:items-center   h-screen xxl:gap-12  
+}
+
+.columnG {
+	@apply flex flex-col gap-8 relative   h-screen  lg:pt-[60px] pt-8  xxl:justify-center xxl:items-center xxl:gap-12 
+}
+
+.columnH {
+	@apply flex flex-col  relative    h-screen justify-between  pt-[44px] pb-10   xxl:justify-center xxl:items-center xxl:gap-12 
+}
+
+.columnI {
+	@apply flex flex-col  relative    h-screen justify-between  xl:pt-[60px]  pt-[44px]  xxl:justify-center xxl:items-center xxl:gap-12 
+}
+

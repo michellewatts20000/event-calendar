@@ -1,0 +1,16 @@
+@import url('https://p.typekit.net/p.css?s=1&k=bea2hgp&ht=tk&f=22710&a=9836756&app=typekit&e=css');
+@import url("https://use.typekit.net/ray8uoh.css");
+@mixin font-opentype {
+  -moz-font-feature-settings: 'liga=1', 'dliga=1', 'kern=1', 'onus=1';
+  -ms-font-feature-settings: 'liga', 'dliga', 'kern', 'onus';
+  -o-font-feature-settings: 'liga', 'dliga', 'kern', 'onus';
+  -webkit-font-feature-settings: 'liga', 'dliga', 'kern', 'onus';
+  font-feature-settings: 'liga', 'dliga', 'kern', 'onus';
+}
+
+@mixin font-smoothing {
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: auto;
+}

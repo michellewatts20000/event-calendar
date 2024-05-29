@@ -1,0 +1,64 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Set up a decent box model on the root element
+ */
+
+html {
+  box-sizing: border-box;
+  font-size: $rem-base;
+  scroll-behavior: smooth;
+}
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/**
+ * Basic typography style for copy text
+ */
+
+body {
+  @include font-opentype;
+  @include font-smoothing;
+  font-family: source-sans-pro, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  @media (max-height: 995px) and (min-width: 1280px) {
+    font-size: 1.4rem;
+    line-height: 2.0rem;
+  }
+
+  @media (max-height: 800px) and (min-width: 1280px) {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+
+
+}
+
+.rift-bold {
+  font-family: rift, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.source-font {
+  font-family: source-sans-pro, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
